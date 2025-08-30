@@ -129,7 +129,7 @@
 
 
 //Diamond pattern
-public  class L6_advanceed_pattern{
+/*public  class L6_advanceed_pattern{
     public static void main(String[] args) {
         int n= 4;
 
@@ -170,6 +170,6 @@ public  class L6_advanceed_pattern{
             System.out.println();
             }
         }
-    }
+    }*/
 
 
