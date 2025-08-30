@@ -1,7 +1,7 @@
 //if else and case satement
 
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 
 /*import java.util.Scanner;

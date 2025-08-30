@@ -1,4 +1,4 @@
-
+//FOR LOOP
 import java.util.Scanner;
 
 
@@ -33,6 +33,10 @@ import java.util.Scanner;
     }
 }*/
 
+
+
+
+//WHILE LOOP
 
 
 //  public class day3{
