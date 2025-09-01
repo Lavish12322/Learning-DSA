@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+
 // print even number till n
 /*public class day5{
     public static void main(String[] args) {
