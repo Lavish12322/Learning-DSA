@@ -2,6 +2,8 @@
 import java.util.Scanner;
 
 
+
+
 /*public class L7_practice_question {
     public static boolean IsPrime(int n) {
         
@@ -157,7 +159,7 @@ import java.util.Scanner;
 
 
 
-public class L7_practice_question{
+/*public class L7_practice_question{
     public static void AgeForVote(int n) {
         
         if (n <= 120 && n >= 18){
@@ -175,4 +177,88 @@ public class L7_practice_question{
         int n = sc.nextInt();
         AgeForVote(n);
     }
+}*/
+
+
+
+// Infinite loop using do while 
+/*public class L7_practice_question{
+    public static void main(String[] args) {
+        do { 
+            System.out.println("Lavish Sisodia");
+        } while (true);
+    }
+}*/
+
+
+
+
+
+// Exponential 
+/*public class L7_practice_question{
+    public static int Power(int x, int n){
+        return (int) Math.pow(x,n);
+    }
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        int x = input.nextInt();
+        int n = input.nextInt();
+        int result = Power(x, n);
+        System.out.println(result);
+    }
+}*/
+
+
+
+
+// Greatest common divisor
+/*public class L7_practice_question{
+    public static int gcd(int a, int b){
+        
+        while (b != 0){
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        int a = input.nextInt();
+        int b = input.nextInt();
+        
+        System.out.println(gcd(a, b));
+    }
+}*/
+
+
+
+
+
+public class L7_practice_question{
+    public static void FibonacciSeries(int n){
+        
+        int a = 0, b = 1;
+        for (int i = 0; i < n; i++){
+           System.out.print(a+" "); 
+           int next = a + b;
+           a = b;
+           b = next;
+        }
+        System.out.println();
+    }
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        
+        int n = input.nextInt();
+
+        FibonacciSeries(n);
+    }
 }
+
+
+
+
+
+
+
