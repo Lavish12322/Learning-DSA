@@ -68,27 +68,27 @@ import java.util.Scanner;
 
 
 
-public class L8_Arrays {
+// public class L8_Arrays {
     
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        int size = input.nextInt();
-        int[] num = new int[size];
+//         Scanner input = new Scanner(System.in);
+//         int size = input.nextInt();
+//         int[] num = new int[size];
 
-        // input
-        for (int i = 0; i < size; i++) {
-            num[i] = input.nextInt();
-        }
+//         // input
+//         for (int i = 0; i < size; i++) {
+//             num[i] = input.nextInt();
+//         }
 
-        int x = input.nextInt();
+//         int x = input.nextInt();
 
 
-        for (int i = 0; i < size; i++){
-            if (num[i] == x) {
-                System.out.println("x is found at index : "+i);
-            }
-       }
+//         for (int i = 0; i < size; i++){
+//             if (num[i] == x) {
+//                 System.out.println("x is found at index : "+i);
+//             }
+//        }
 
-    }
-}
+//     }
+// }
