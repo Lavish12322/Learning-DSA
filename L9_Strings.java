@@ -1,6 +1,6 @@
 
 
-/*public class L9_2D_Arrays {
+/*public class L9_Strings {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String name = sc.nextLine();
@@ -15,7 +15,7 @@
 
 
 // concatenation means adding two string
-/*public class L9_2D_Arrays {
+/*public class L9_Strings {
     public static void main(String[] args) {
         
         String firstName = "Lavish";
@@ -30,7 +30,7 @@
 
 
 // print length of array 
-/*public class L9_2D_Arrays {
+/*public class L9_Strings {
     public static void main(String[] args) {
         
         String firstName = "Lavish";
@@ -45,7 +45,7 @@
 
 
 // charAt() means print every single character of string
-/*public class L9_2D_Arrays {
+/*public class L9_Strings {
     public static void main(String[] args) {
         
         String firstName = "Lavish";
@@ -63,7 +63,7 @@
 
 
 // use of compareTo
-/*public class L9_2D_Arrays {
+/*public class L9_Strings {
     public static void main(String[] args) {
         
         String name1 = "Lavish";
@@ -88,7 +88,7 @@
 
 
 // use substring() means a smaller sequence of characters taken from the original string
-public class L9_String {
+public class L9_Strings {
     public static void main(String[] args) {
         
         String sentence = "My name is Lavish Sisodia";
