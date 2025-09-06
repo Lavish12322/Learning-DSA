@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class L8_practice_question {
+public class L10_practice_question {
    public static void main(String args[]) {
       Scanner sc = new Scanner(System.in);
       int size = sc.nextInt();

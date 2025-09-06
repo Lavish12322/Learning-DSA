@@ -88,7 +88,7 @@
 
 
 // use substring() means a smaller sequence of characters taken from the original string
-public class L9_Strings {
+public class L12_Strings {
     public static void main(String[] args) {
         
         String sentence = "My name is Lavish Sisodia";

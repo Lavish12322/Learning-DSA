@@ -62,7 +62,7 @@ import java.util.Scanner;
 
 
 // Transpose of matrix
-public class L10_2D_practice_question {
+public class L11_practice_question {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
