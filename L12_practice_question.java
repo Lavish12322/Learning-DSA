@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 
-/*public class L9_practice_question {
+/*public class L12_practice_question {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -23,7 +23,7 @@ import java.util.Scanner;
 
 
 
-/*public class L9_practice_question {
+/*public class L12_practice_question {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);

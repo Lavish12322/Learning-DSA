@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 //Marks
-/*public class L8_Arrays {
+/*public class L10_Arrays {
     
     public static void main(String[] args) {
         
@@ -22,7 +22,7 @@ import java.util.Scanner;
 
 
 // Marks by for loop in array
-// public class L8_Arrays {
+// public class L10_Arrays {
     
 //     public static void main(String[] args) {
         
@@ -43,7 +43,7 @@ import java.util.Scanner;
 
 
 
-// public class L8_Arrays {
+// public class L10_Arrays {
     
 //     public static void main(String[] args) {
 
@@ -68,7 +68,7 @@ import java.util.Scanner;
 
 
 
-// public class L8_Arrays {
+// public class L10_Arrays {
     
 //     public static void main(String[] args) {
 

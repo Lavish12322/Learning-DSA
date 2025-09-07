@@ -3,7 +3,7 @@
 
 
 // print matrix
-/*public class L10_2D_Arrays {
+/*public class L11_2D_Arrays {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int rows = sc.nextInt();
@@ -37,7 +37,7 @@
 
 
 // finding number from matrix
-/*public class L10_2D_Arrays {
+/*public class L11_2D_Arrays {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int rows = sc.nextInt();

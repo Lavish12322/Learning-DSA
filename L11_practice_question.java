@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 // spiral order matrix
-/*public class L10_practice_question {
+/*public class L11_practice_question {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
