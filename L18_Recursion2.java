@@ -1,3 +1,5 @@
+
+// Tower of hanoi
 /*public class L18_Recursion2 {
     public static void towerofHanoi(int n, String src, String helper, String dest) {
         // Base case
@@ -23,6 +25,7 @@
 
 
 
+
 /*public class L18_Recursion2 {
     public static void printRev(String str, int idx) {
         // Base case
@@ -43,7 +46,8 @@
 
 
 
-public class L18_Recursion2 {
+
+/*public class L18_Recursion2 {
     public static int first = -1;
     public static int last = -1;
 
@@ -69,4 +73,111 @@ public class L18_Recursion2 {
         String str = "abaacdaefaah";
         findOccurance(str, 0, 'a');
     }
+}*/
+
+
+
+
+// Sorted array for Strictly increasing
+/*public class L18_Recursion2 {
+    public static boolean isSorted(int arr[], int idx) {
+        // base case
+        if(idx == arr.length-1){
+            return true;
+        }
+
+        if(arr[idx] < arr[idx+1]){
+            return isSorted(arr, idx+1);
+        } else {
+            return false;
+        }
+    }
+    public static void main(String[] args) {
+        int arr[] = {1, 4, 6};
+        System.out.println(isSorted(arr, 0));
+        
+    }
+}*/
+
+
+// Opposite condition for Strictly increasing
+/*public class L18_Recursion2 {
+    public static boolean isSorted(int arr[], int idx) {
+        // base case
+        if(idx == arr.length-1){
+            return true;
+        }
+
+        if(arr[idx] >= arr[idx+1]){
+            return false;
+        } 
+        return isSorted(arr, idx+1);
+    }
+    public static void main(String[] args) {
+        int arr[] = {1, 4, 6};
+        System.out.println(isSorted(arr, 0));
+        
+    }
+}*/
+
+
+
+// move all 'x' to end of string
+/*public class L18_Recursion2 {
+    public static void moveAllX(String str, int idx, int count, String newString){
+        // base case
+        if(idx == str.length()){
+            for (int i = 0; i < count; i++) {
+                newString += 'x';
+            }
+            System.out.println(newString);
+            return;
+        }
+            
+
+        char currChar = str.charAt(idx);
+        if (currChar == 'x'){
+            count++;
+            moveAllX(str, idx+1, count, newString);
+        } else {
+            newString += currChar;
+            moveAllX(str, idx+1, count, newString);
+        }
+    }
+    public static void main(String[] args) {
+        String str = "axbcxxd";
+        moveAllX(str, 0, 0, "");
+        
+    }
+}*/
+
+
+
+
+//Remove dulpicates from the String
+public class L18_Recursion2 {
+    public static boolean [] map = new boolean[26];
+        
+    public static void removeDuplicates(String str, int idx, String newString) {
+        // base case
+        if(idx == str.length()){
+            System.out.println(newString);
+            return;
+        }
+
+        char currChar = str.charAt(idx);
+        if(map[currChar - 'a']){
+           removeDuplicates(str, idx+1, newString); 
+        } else {
+            newString += currChar;
+            map[currChar - 'a'] = true;
+            removeDuplicates(str, idx+1, newString);
+        }
+    }
+    public static void main(String[] args) {
+        String str = "abbccdda";
+        removeDuplicates(str, 0, "");
+        
+    }
 }
+
