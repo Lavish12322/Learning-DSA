@@ -1,5 +1,4 @@
 
-// Tower of hanoi
 /*public class L18_Recursion2 {
     public static void towerofHanoi(int n, String src, String helper, String dest) {
         // Base case
@@ -155,7 +154,7 @@
 
 
 //Remove dulpicates from the String
-public class L18_Recursion2 {
+/*public class L18_Recursion2 {
     public static boolean [] map = new boolean[26];
         
     public static void removeDuplicates(String str, int idx, String newString) {
@@ -179,5 +178,99 @@ public class L18_Recursion2 {
         removeDuplicates(str, 0, "");
         
     }
-}
+}*/
 
+
+
+//print all the subsequences of a string
+/*public class L18_Recursion2 {
+    public static void subsequesnces(String str, int idx, String newString) {
+        // base case
+        if(idx == str.length()){
+            System.out.println(newString);
+            return;
+        }
+
+        char currChar = str.charAt(idx);
+
+        // to be 
+        subsequesnces(str, idx+1, newString+currChar);
+
+        // or not to be
+        subsequesnces(str, idx+1, newString);
+        
+
+    }
+    public static void main(String[] args) {
+        String str = "abc";
+        subsequesnces(str, 0, "");
+        
+    }
+}*/
+
+
+
+
+
+// print all the unique subsequences of a string
+/*public class L18_Recursion2 {
+    public static void subsequesnces(String str, int idx, String newString, HashSet<String> set) {
+        // base case
+        if(idx == str.length()){
+            if (set.contains(newString)) {
+                return;
+            } else {
+                System.out.println(newString);
+                return;
+            }
+        }
+
+        char currChar = str.charAt(idx);
+
+        // to be 
+        subsequesnces(str, idx+1, newString+currChar, set);
+
+        // or not to be
+        subsequesnces(str, idx+1, newString, set);
+        
+
+    }
+    public static void main(String[] args) {
+        String str = "aaa";
+        HashSet<String> set = new HashSet<>();
+        subsequesnces(str, 0, "", set);
+        
+    }
+}*/
+
+
+
+
+
+// print keypad combination
+public class L18_Recursion2 {
+    public static String[] keypad = {".", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
+
+
+    public static void printcomb(String str, int idx, String combination) {
+        // base case
+        if(idx == str.length()) {
+            System.out.println(combination);
+            return;
+        }
+
+
+        char currChar = str.charAt(idx);
+        String mapping = keypad[currChar - '0'];
+
+        for (int i = 0; i<mapping.length(); i++){
+            printcomb(str, idx+1, combination+mapping.charAt(i));
+        }
+    }
+    public static void main(String[] args) {
+        String str = "23";
+        printcomb(str, 0, "");
+       
+        
+    }
+}
